@@ -22,7 +22,7 @@ The controller is built on a 3-state FSM model:
 | **S2** | `10` | **Output Generation State:** Compares the inserted value with the product cost. Dispenses the product (DA, DB, DC) and calculates change (CA, CI) if funds are sufficient. Triggers the IBI and returns funds if insufficient. Transitions back to S0. |
 
 ### State Transition Logic
-![State Transition Logic](states logic_proteus.png)
+![State Transition Logic](states%20logic_proteus.png)
 
 ## Input and Output Signals
 
@@ -49,16 +49,16 @@ To optimize the hardware design and combinational logic in Proteus, the numerica
     *   The remaining bits (`CA[4:1]`) represent the tens digit (equivalent to `10x`).
 
 ### Input Logic Schematic
-![Inputs Logic](inputs logic_proteus.png)
+![Inputs Logic](inputs%20logic_proteus.png)
 
 ### Output Logic Schematic
-![Output Logic](output logic_proteus.png)
+![Output Logic](output%20logic_proteus.png)
 
 ## Repository Contents
 *   `vending.v`: The main Verilog module containing the FSM and controller logic.
 *   `vending_test.v`: The Verilog testbench used to simulate and verify the controller.
 *   `sim_waveforms.png`: Simulation waveforms demonstrating the FSM behavior.
-*   `Digi_Explorers.pdsprj`: The complete hardware logic implementation designed in Proteus.
+*   `Proteus_simulation.pdsprj`: The complete hardware logic implementation designed in Proteus.
 
 ## How to Run the Verilog Simulation
 1.  Open your preferred Verilog simulator (e.g., ModelSim, Vivado, EDA Playground).
@@ -68,6 +68,9 @@ To optimize the hardware design and combinational logic in Proteus, the numerica
 ## How to Run the Proteus Simulation
 1. Ensure you have **Proteus Design Suite** installed.
 2. Clone or download this repository to your local machine.
-3. Open the `Digi_Explorers.pdsprj` file included in the repository using Proteus.
+3. Open the `Proteus_simulation.pdsprj` file included in the repository using Proteus.
 4. Click the **Play/Run** button at the bottom left of the Proteus workspace to start the simulation.
 5. Interact with the circuit using the logic toggles/buttons for coin insertion (`C10`, `C20`) and product selection (`PA`, `PB`, `PC`).
+
+## Simulation Waveforms
+![Simulation Waveforms](sim_waveforms.png)

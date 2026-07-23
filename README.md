@@ -72,5 +72,5 @@ To optimize the hardware design and combinational logic in Proteus, the numerica
 4. Click the **Play/Run** button at the bottom left of the Proteus workspace to start the simulation.
 5. Interact with the circuit using the logic toggles/buttons for coin insertion (`C10`, `C20`) and product selection (`PA`, `PB`, `PC`).
 
-## Simulation Waveforms
+## Vivado Simulation Waveforms
 ![Simulation Waveforms](sim_waveforms.png)
